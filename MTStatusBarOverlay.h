@@ -29,24 +29,24 @@
 
 // Animation that happens, when the user touches the status bar overlay
 typedef enum MTStatusBarOverlayAnimation {
-	MTStatusBarOverlayAnimationNone,      // nothing happens
-	MTStatusBarOverlayAnimationShrink,    // the status bar shrinks to the right side and only shows the activity indicator
-	MTStatusBarOverlayAnimationFallDown   // the status bar falls down and displays more information
+    MTStatusBarOverlayAnimationNone,      // nothing happens
+    MTStatusBarOverlayAnimationShrink,    // the status bar shrinks to the right side and only shows the activity indicator
+    MTStatusBarOverlayAnimationFallDown   // the status bar falls down and displays more information
 } MTStatusBarOverlayAnimation;
 
 
 // Mode of the detail view
 typedef enum MTDetailViewMode {
-	MTDetailViewModeHistory,			// History of messages is recorded and displayed in detailView
-	MTDetailViewModeDetailText,			// a text can be displayed easily
-	MTDetailViewModeCustom				// the detailView can be customized in the way the developer wants
+    MTDetailViewModeHistory,			// History of messages is recorded and displayed in detailView
+    MTDetailViewModeDetailText,			// a text can be displayed easily
+    MTDetailViewModeCustom				// the detailView can be customized in the way the developer wants
 } MTDetailViewMode;
 
 // indicates the type of a message
 typedef enum MTMessageType {
-	MTMessageTypeActivity,				// shows actvity indicator
-	MTMessageTypeFinish,				// shows checkmark
-	MTMessageTypeError					// shows error-mark
+    MTMessageTypeActivity,				// shows actvity indicator
+    MTMessageTypeFinish,				// shows checkmark
+    MTMessageTypeError					// shows error-mark
 } MTMessageType;
 
 
@@ -59,6 +59,8 @@ typedef enum MTMessageType {
 
 // keys used for saving state to NSUserDefaults
 #define kMTStatusBarOverlayStateShrinked        @"kMTStatusBarOverlayStateShrinked"
+
+#define kOvulineStatusBarMessageDisplayDuration 1.65
 
 
 // forward-declaration of delegate-protocol
@@ -78,7 +80,7 @@ typedef enum MTMessageType {
  a detail-view that shows additional information. You can show a history of all the previous
  messages for free by setting historyEnabled to YES
  */
-@interface MTStatusBarOverlay : UIWindow <UITableViewDataSource> 
+@interface MTStatusBarOverlay : UIWindow <UITableViewDataSource>
 
 // the view that holds all the components of the overlay (except for the detailView)
 @property (nonatomic, strong) UIView *backgroundView;
