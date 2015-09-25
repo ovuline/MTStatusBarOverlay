@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'MTStatusBarOverlay'
-  s.version  = '0.9.2'
+  s.version  = '0.9.3'
   s.platform = :ios
   s.summary  = 'A custom iOS status bar overlay seen in Apps like Reeder, Evernote and Google Mobile App.'
   s.homepage = 'https://github.com/myell0w/MTStatusBarOverlay'
