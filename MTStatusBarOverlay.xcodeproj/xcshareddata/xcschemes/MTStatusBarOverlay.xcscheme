@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D2AAC07D0554694100DB518D"
-               BuildableName = "libMTStatusBarOverlay.a"
+               BuildableName = "MTStatusBarOverlay.framework"
                BlueprintName = "MTStatusBarOverlay"
                ReferencedContainer = "container:MTStatusBarOverlay.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D2AAC07D0554694100DB518D"
-            BuildableName = "libMTStatusBarOverlay.a"
+            BuildableName = "MTStatusBarOverlay.framework"
             BlueprintName = "MTStatusBarOverlay"
             ReferencedContainer = "container:MTStatusBarOverlay.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D2AAC07D0554694100DB518D"
-            BuildableName = "libMTStatusBarOverlay.a"
+            BuildableName = "MTStatusBarOverlay.framework"
             BlueprintName = "MTStatusBarOverlay"
             ReferencedContainer = "container:MTStatusBarOverlay.xcodeproj">
          </BuildableReference>
