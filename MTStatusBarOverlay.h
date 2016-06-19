@@ -19,7 +19,7 @@
 // @reederapp for inspiration
 // -------------------------------
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 
 //===========================================================
