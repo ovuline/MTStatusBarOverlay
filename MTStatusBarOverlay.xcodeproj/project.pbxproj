@@ -12,7 +12,7 @@
 		AA747D9F0F9514B9006C5449 /* MTStatusBarOverlay_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* MTStatusBarOverlay_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		DD58223C1D05CF0800E96112 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD58223B1D05CF0800E96112 /* CoreGraphics.framework */; };
-		DD58223E1D05CF0D00E96112 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD58223D1D05CF0D00E96112 /* UIKit.framework */; };
+		DD7859FD1D745A0F00DEC717 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7859FC1D745A0F00DEC717 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +24,8 @@
 		D2AAC07E0554694100DB518D /* MTStatusBarOverlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MTStatusBarOverlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD58223B1D05CF0800E96112 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DD58223D1D05CF0D00E96112 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DD7859FB1D7459CB00DEC717 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD7859FC1D745A0F00DEC717 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD58223E1D05CF0D00E96112 /* UIKit.framework in Frameworks */,
+				DD7859FD1D745A0F00DEC717 /* UIKit.framework in Frameworks */,
 				DD58223C1D05CF0800E96112 /* CoreGraphics.framework in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 			);
@@ -62,6 +64,7 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DD7859FC1D745A0F00DEC717 /* UIKit.framework */,
 				DD58223D1D05CF0D00E96112 /* UIKit.framework */,
 				DD58223B1D05CF0800E96112 /* CoreGraphics.framework */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
@@ -81,6 +84,7 @@
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				DD7859FB1D7459CB00DEC717 /* Info.plist */,
 				9B7BD5B81447310F007D213A /* Readme.mdown */,
 				AA747D9E0F9514B9006C5449 /* MTStatusBarOverlay_Prefix.pch */,
 			);
@@ -197,9 +201,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myell0w.MTStatusBarOverlay;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -239,8 +245,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myell0w.MTStatusBarOverlay;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
